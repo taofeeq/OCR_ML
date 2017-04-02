@@ -19,6 +19,7 @@ end
 for k=(cnet.numLayers-cnet.numFLayers):-1:2 %first layer is dummy
     if(rem(k,2)) %Parity check
         %Subsampling layer
+		% making sure elements are returned well.
         sz = sz + numel(cnet.SLayer{k}.WS)*numel(cnet.SLayer{k}.WS{1})+numel(cnet.SLayer{k}.BS)*numel(cnet.SLayer{k}.BS{1});
     else
         %Convolutional layer
