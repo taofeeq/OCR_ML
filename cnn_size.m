@@ -1,17 +1,11 @@
 function sz = cnn_size(cnet)
-%cnn_size Calculate the total number of all trainable parameters
-%
-%  Syntax
-%  
-%    sz = cnn_size(cnet)
-%    
-%  Description
+
+
 %   Input:
 %    cnet - Convolutional neural network class object
 %   Output:
 %    sz - number of all trainable parameters 
-%
-%(c) Sirotenko Mikhail, 2009
+
 
 
 sz = 0;
